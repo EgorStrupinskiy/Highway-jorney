@@ -1,0 +1,25 @@
+﻿  Game.cpp
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(37,27): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(79,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(82,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(207,24): warning C4804: <: небезопасное использование типа "bool" в операции
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(215,23): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(235,44): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(238,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(271,17): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(272,63): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(278,17): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(279,63): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(252,6): warning C4101: speed: неиспользованная локальная переменная
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(316,53): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(317,21): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\course_work_yap\project\1st try\Course_yap1\Game.cpp(318,55): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  Course_yap1.vcxproj -> D:\course_work_yap\project\1st try\Course_yap1\Debug\Course_yap1.exe
