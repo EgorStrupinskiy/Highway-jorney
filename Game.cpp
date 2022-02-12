@@ -41,14 +41,14 @@ void Game::initVariables()
 void Game::initWindow()
 {
 	this->videomode = sf::VideoMode(1920, 1080);
-	this->window = new sf::RenderWindow(this->videomode, "Drug_race", sf::Style::Close | sf::Style::Titlebar |sf::Style::Fullscreen);
+	this->window = new sf::RenderWindow(this->videomode, "Drug_race");
 	this->window->setFramerateLimit(144);
 	this->window->setVerticalSyncEnabled(true);
 }
 
 void Game::initEnemies()
 {
-	this->spawnTimerMax = 30.f;
+	this->spawnTimerMax = 130.f;
 	this->spawnTimer = 0;
 }
 
@@ -58,7 +58,6 @@ void Game::initSounds()
 		std::cout << "Failed to load a main music";
 	this->music.setVolume(50);
 	this->music.setLoop(true);
-//	this->music.play();
 	if (!(this->contact_buff.loadFromFile("Sounds/contact.wav")))
 		std::cout << "Failed to load contact sound";
 	this->contact_sound.setBuffer(contact_buff);
@@ -80,7 +79,7 @@ void Game::updateEnemies(int speed, int posY)
 		this->spawnTimer = 0.f;
 	}
 	for (int i = 0; i < this->enemies.size(); ++i)
-	{
+	{	
 		this->enemies[i]->update(speed, posY);
 
 		//Remove enemy at the buttom
@@ -119,12 +118,15 @@ Game::Game()
 	initWindow();
 	initEnemies();
 	initCoins();
+	ShowCursor(false);
+	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
 }
 
 Game::~Game()
 {
 	delete this->window;
 }
+
 
 void Game::pollEvents()
 {

@@ -4,6 +4,7 @@
 #include <SFML/System.hpp>
 #include <iostream>
 #include <string>
+#include <Windows.h>
 
 #include <sstream>
 
